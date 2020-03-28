@@ -13,7 +13,6 @@ public class Task5 {
 
 		//文字列の入力
 		Scanner sc = new Scanner(System.in);
-		//Scanner sc2 = new Scanner(System.in);	修正、削除
 
 		String str1 = sc.nextLine();
 		String str2 = sc.nextLine();
@@ -23,7 +22,6 @@ public class Task5 {
 		System.out.println(str1 + str2);
 
 		sc.close();
-		//sc2.close();	修正箇所
 	}
 
 }
