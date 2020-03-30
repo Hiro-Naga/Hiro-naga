@@ -5,21 +5,17 @@ import java.util.Scanner;
 public class Task5 {
 	public static void main(String args[]) {
 		
-		Scanner scNumA = new Scanner(System.in);
-		Scanner scNumB = new Scanner(System.in);
-		Scanner scNumC = new Scanner(System.in);
+		Scanner scNum = new Scanner(System.in);
 		
 		//数字入力
 		System.out.println("numA: ");
-		int numA = scNumA.nextInt();
+		int numA = scNum.nextInt();
 		System.out.println("numB: ");
-		int numB = scNumB.nextInt();
+		int numB = scNum.nextInt();
 		System.out.println("numC: ");
-		int numC = scNumC.nextInt();
-		scNumA.close();
-		scNumB.close();
-		scNumC.close();
-		
+		int numC = scNum.nextInt();
+		scNum.close();
+
 		//条件分岐
 		if(numA >= numB && numA >= numC) {					//Aが一番大きい
 			System.out.println("最大値: " + numA);

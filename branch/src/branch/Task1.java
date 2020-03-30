@@ -13,13 +13,10 @@ public class Task1 {
 		scInt.close();
 		
 		//条件分岐
-		if(num > 10) {
-			System.out.println("値: " + num);
-		}else {
+		if(num < 10) {
 			num = num * 10;
-			System.out.println("値: " + num);
 		}
-		
+		System.out.println("値: " + num);
 	}
 
 }

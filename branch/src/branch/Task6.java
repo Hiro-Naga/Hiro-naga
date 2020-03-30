@@ -12,30 +12,30 @@ public class Task6 {
 		scNum.close();
 		
 		//条件分岐
-		String NUM;
+		String number;
 		switch(num) {
 		
 		case 1:
-			NUM = "Ⅰ";
+			number = "Ⅰ";
 			break;
 		case 2:
-			NUM = "Ⅱ";
+			number = "Ⅱ";
 			break;
 		case 3:
-			NUM = "Ⅲ";
+			number = "Ⅲ";
 			break;
 		case 4:
-			NUM = "Ⅳ";
+			number = "Ⅳ";
 			break;
 		case 5:
-			NUM = "Ⅴ";
+			number = "Ⅴ";
 			break;
 		default:
-			NUM = "unknown";
+			number = "unknown";
 			break;
 		}
 		
-		System.out.println(num + "->" + NUM);
+		System.out.println(num + "->" + number);
 	}
 
 }
