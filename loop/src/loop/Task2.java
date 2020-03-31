@@ -4,27 +4,25 @@ import java.util.Scanner;
 
 public class Task2 {
 	public static void main(String args[]) {
-		
+
 		//数字入力
 		Scanner scInt = new Scanner(System.in);
-		
+
 		System.out.print("数字を入力してください： ");
 		int num = scInt.nextInt();
 		scInt.close();
-		
+
 		//計算表示
 		int sum = 0;		//合計
-		int i = 0;			//回数
-		
-		while(i < num) {
-			i++;
+
+		for(int i = 1; i < num + 1; i++) {				//1～numまでループさせたい
 			sum = sum + i;
 			if(i == num) {
-				break;
+				System.out.println(i + " = " + sum);
+			}else {
+				System.out.print(i + " + ");
 			}
-			System.out.print(i + " + ");
 		}
-		System.out.println(i + " = " + sum);
 	}
 
 }
