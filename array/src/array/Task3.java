@@ -22,34 +22,16 @@ public class Task3 {
 		}
 
 		//最大最小計算・表示
-		/* まずarray[1]に関して最大か判別
-		 * 次にarray[2]、array[3]、…と判別
-		 *
-		 * array[1]に関してarray[2]～array[6]に関して判別したいため
-		 * ループ内部にもう一つループを設定した。
-		 */
 
-		for(int i = 0; i < array.length; i++) {
-			for(int j = i + 1; j < array.length; j++) {
-				if(array[i] >= array[j]) {					//最大値計算
-					if(array[i] > max) {
-						max = array[i];
-					}else{
-						if(array[j] > max) {
-							max = array[j];
-						}
-					}
-				}else {										//最小値計算
-					if(array[i] <= min) {
-						min = array[i];
-					}else {
-						if(array[i] < min) {
-							min = array[j];
-						}
-					}
-				}
+		for(int ele: array) {
+			if(ele > max) {
+				max = ele;
+			}
+			if(ele < min) {
+				min = ele;
 			}
 		}
+
 		System.out.println("最大値： " + max);
 		System.out.println("最小値： " + min);
 	}

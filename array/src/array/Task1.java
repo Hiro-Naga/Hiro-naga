@@ -14,7 +14,12 @@ public class Task1 {
 			}else {
 				System.out.print(array[i] + ",");
 			}
-			sum = sum + array[i];
+			//sum = sum + array[i];
+		}
+		
+		//for文中のコメント部分を拡張for文に
+		for(int ele: array) {
+			sum = sum + ele;
 		}
 		
 		System.out.println("合計：" + sum);
