@@ -16,10 +16,8 @@ public class Task2 {
 	
 	//面積計算
 	public static double getTriangleArea(double bot, double hei) {
-		double bottom = ((double)Math.round(bot * 10) / 10);			//小数点第一位までで四捨五入
-		double height = ((double)Math.round(hei * 10) / 10);
-		double ar = bottom * height / 2.0;
-		double area = ((double)Math.round(ar) * 10 / 10);
+		double ar = bot * hei / 2.0;
+		double area = ((double)Math.round(ar) * 10 / 10);			//小数点第一位までで四捨五入
 		return area;
 	}
 

@@ -12,19 +12,19 @@ public class Task3 {
 	}
 	
 	//文字列＋文字列
-	public static String add(String arg1, String arg2) {
+	static String add(String arg1, String arg2) {
 		String ans = arg1 + arg2;
 		return ans;
 	}
 	
 	//整数＋整数
-	public static int add(int num1, int num2) {
+	static int add(int num1, int num2) {
 		int ans = num1 + num2;
 		return ans;
 	}
 	
 	//少数＋少数
-	public static double add(double num1, double num2) {
+	static double add(double num1, double num2) {
 		double ans = num1 + num2;
 		return ans;
 	}

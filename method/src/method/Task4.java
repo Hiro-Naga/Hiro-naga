@@ -8,9 +8,7 @@ public class Task4 {
 		System.out.println(nullCheck(args1));
 		System.out.println("---配列にnullがある場合---");
 		System.out.println(nullCheck(args2));
-
 	}
-
 
 	//nullCheck
 	public static boolean nullCheck(String[] args) {
