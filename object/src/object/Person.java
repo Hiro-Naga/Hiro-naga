@@ -11,29 +11,17 @@ public class Person {
 
 	//コンストラクタ(課題1)
 	//引数なしの場合
-	Person(){
+	public Person(){
 		System.out.println("名前・年齢未定義");
 	}
-	//課題要件が読み切れず、引数ありの3パターン中nameとage共に引数に設定したもののみ残しました。
-	//残り2パターンは以下のコメントアウト部分です。
-	/*Person(String name){
-		this.name = name;
-		System.out.println(name);
-	}
-	Person(int age){
-		this.age = age;
-		System.out.println(age);
-	}
-	 */
-
-	Person(String name, int age){
+	//引数あり(nameとageを引数に)
+	public Person(String name, int age){
 		this.name = name;
 		this.age = age;
-		System.out.println(name + age);
 	}
 
 	//お財布に入力した数字分を追加するインストラクタ(課題2)
-	Person(int wallet){
+	public Person(int wallet){
 		this.wallet += wallet;
 	}
 
@@ -48,8 +36,13 @@ public class Person {
 	public String getName() {
 		return this.name;
 	}
-	public void setName(String name, int age) {
+	public void setName(String name) {
 		this.name = name;
+	}
+	public int getAge() {
+		return this.age;
+	}
+	public void setAge(int age) {
 		this.age = age;
 	}
 
