@@ -5,7 +5,7 @@ public class Task2 {
 		String str = "Java Programming Training";
 		
 		System.out.println(str.substring(17));
-		System.out.println(str.substring(0, 17));
+		System.out.println(str.substring(0, 16));
 	}
 
 }
