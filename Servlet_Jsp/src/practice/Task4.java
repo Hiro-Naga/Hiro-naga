@@ -31,7 +31,7 @@ public class Task4 extends HttpServlet {
 		final String resultPath = "/WEB-INF/jsp/fortune_result.jsp";		//フォワード用パス設定
 		Date today = new Date();											//日付
 		Random rand = new Random();
-		int num = rand.nextInt(5);											//乱数用
+		int num = rand.nextInt(6);											//乱数用
 		String[] fortune = {"大吉", "中吉", "小吉", "末吉", "凶", "大凶"};	//占い結果の配列
 		FortuneBean ftb = new FortuneBean();								//FortuneBean
 		ftb.setToday(today);
