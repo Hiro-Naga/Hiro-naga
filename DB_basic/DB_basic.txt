@@ -1,0 +1,24 @@
+DB_basic
+
+task1
+1.SELECT * FROM 社員情報;
+2.SELECT * FROM 社員情報 WHERE 名前 LIKE '%太%';
+3.SELECT * FROM 社員情報 WHERE 生年月日 > '1990-01-01';
+4.SELECT 名前 FROM 社員情報 WHERE 年齢 > 60 AND 部署 = 1;
+5.SELECT 名前 From 社員情報 WHERE 年齢 < 30 OR 部署 = 2; 
+
+task2
+1.UPDATE 社員情報 SET 年齢 = 29 WHERE 名前 = '社員太郎';
+2.UPDATE 社員情報 SET 給与 = 600 WHERE 年齢 = 35 AND 部署 = 2;
+3.UPDATE 社員情報 SET 部署 = 1 WHERE 年齢 >= 25 AND 年齢 <= 30;
+4.UPDATE 社員情報 SET 生年月日 = '1999-01-01' WHERE 名前 = '青%' OR 名前 = '%赤';
+
+task3
+1.INSERT INTO 社員情報 VALUES ('社員太郎', '1990-01-01', 29, 1, 450);
+2.INSERT INTO 社員情報 (名前, 生年月日,年齢, 給与) VALUES ('社員花子', '1980-02-01', 39, 550);
+
+task4
+1.DELETE FROM 社員情報 WHERE 名前 = '削除太郎';
+2.DELETE FROM 社員情報 WHERE 年齢 < 22 OR 年齢 > 65;
+3.DELETE FROM 社員情報 WHERE 生年月日 >= '2000-04-01';
+4.DELETE FROM 社員情報 WHERE 部署 = 2 AND 給与 >= 1000;
