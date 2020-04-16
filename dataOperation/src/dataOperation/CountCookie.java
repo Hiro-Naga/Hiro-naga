@@ -51,6 +51,13 @@ public class CountCookie extends HttpServlet {
 					//cookieの値更新
 					cookies[i].setValue(Integer.toString(times));
 					response.addCookie(cookies[i]);
+				}else {
+					//"Visiter"がない場合も"Visiterの"Cookie作成
+					Cookie cookie = new Cookie("Visiter", "1");
+					//有効期限設定(5分→300s)
+					cookie.setMaxAge(300);
+					//cookieの保存
+					response.addCookie(cookie);
 				}
 			}
 		}else {

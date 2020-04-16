@@ -44,7 +44,19 @@ public class Result extends HttpServlet {
 		out.println("<p>" + "以下の内容でお問い合せしました。回答をお待ちください。" + "</p>");
 		out.println("<p>" + "名前：" + name + "様" + "</p>");
 		out.println("<p>" + "性別：" + sex + "</p>");
-		out.println("<p>" + "お問合せ種類：" + questType + "</p>");
+		out.print("<p>" + "お問合せ種類：");
+		switch(questType) {
+			case "product":
+				out.print("製品について");
+				break;
+			case "claim":
+				out.print("不具合やクレーム");
+				break;
+			case "support":
+				out.println("アフターサポート");
+				break;
+		}
+		out.println("</p>");
 		out.println("<p>" + "お問合せ内容：" + questCont + "</p>");
 		htp.footer(out);
 

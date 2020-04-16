@@ -16,14 +16,14 @@
 				<br>
 				お問い合せ種類<br>
 				<select name = "questionType">
-					<option value = "製品について">製品について</option>
-					<option value = "不具合やクレーム">不具合やクレーム</option>
-					<option value = "アフターサポート">アフターサポート</option>
+					<option value = "product">製品について</option>
+					<option value = "claim">不具合やクレーム</option>
+					<option value = "support">アフターサポート</option>
 				</select>
 				<br>
 			<textarea name = "questionContent" cols = "150" >150文字以内で入力してください</textarea>
 			<br>
-			<input type = "submit" name = "送信" value = "送信">
+			<input type = "submit" name = "send" value = "送信">
 		</form>
 
 	</body>
