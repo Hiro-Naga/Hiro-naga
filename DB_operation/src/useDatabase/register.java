@@ -39,7 +39,7 @@ public class register extends HttpServlet {
 		response.setContentType("text/html; charset = UTF-8");
 
 		//String→Date用
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		String birth = request.getParameter("birthday");
 
 		//HTMLの入力内容取得
